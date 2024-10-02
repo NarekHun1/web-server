@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",                           // Target ECMAScript version
+    "module": "CommonJS",                         // Node.js uses CommonJS module system
+    "lib": ["ES2020"],                            // Includes built-in type definitions (ES features)
+    "strict": true,                               // Enable all strict type-checking options
+    "esModuleInterop": true,                      // Enable interop between CommonJS and ES modules
+    "skipLibCheck": true,                         // Skip type checking of declaration files (for faster compilation)
+    "forceConsistentCasingInFileNames": true,     // Ensure consistent file naming
+    "moduleResolution": "node",                   // Ensure modules are resolved like in Node.js
+    "outDir": "./dist",                           // Output directory for compiled files
+    "rootDir": "./src",                           // Source directory for TypeScript files
+    "noImplicitAny": true,                        // Disallow any types (for better safety)
+    "resolveJsonModule": true,                    // Allow importing .json files
+    "strictNullChecks": true,                     // Ensure that null and undefined are handled correctly
+    "noUnusedLocals": true,                       // Report errors on unused local variables
+    "noUnusedParameters": true,                   // Report errors on unused parameters in functions
+    "noImplicitReturns": true,                    // Ensure all code paths in functions return a value
+    "noFallthroughCasesInSwitch": true            // Ensure there is no fallthrough in switch cases
+  },
+  "include": ["src"],                             // Include all TypeScript files in the "src" directory
+  "exclude": ["node_modules", "dist"]             // Exclude these directories from the compilation process
+}
